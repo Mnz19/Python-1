@@ -1,0 +1,23 @@
+from time import sleep
+nota1 = float(input('Primeira nota: '))
+nota2 = float(input('Segunda nota: '))
+qtdaulas = int(input('Quantas aula foram ministradas? '))
+aulaassis = int(input('Quantas aula você assistiu? '))
+presenca = (aulaassis/qtdaulas)*100
+media = (nota1 + nota2)/2
+precisa = 10 - media
+print('{}CALCULANDO SUA MÉDIA . . .{}'.format('\033[34m', '\033[m'))
+sleep(1)
+print('...')
+sleep(1)
+print('...')
+sleep(1)
+print('...')
+if presenca < 75:
+    print('{}REPROVADO POR FREQUENCIA{}'.format('\033[31;4m', '\033[m'))
+elif presenca >= 75 and media >= 7:
+    print('{}APROVADO{}'.format('\033[32m', '\033[m'))
+elif media < 4:
+    print('\033[31;4mREPROVADOR POR MÉDIA\033[m')
+else:
+    print('{}RECUPERAÇÃO{},VOCÊ PRECISA DE {} PONTOS PARA PASSAR'.format('\033[31;4m', '\033[m', precisa))
