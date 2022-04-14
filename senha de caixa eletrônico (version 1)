@@ -1,0 +1,98 @@
+senha = int(input('Digite sua senha: '))
+s1: int = senha // 1000
+s2: int = (senha % 1000) // 100
+s3: int = ((senha % 1000) % 100) // 10
+s4: int = ((senha % 1000) % 100) % 10
+
+senhacrt = [s1, s2, s3, s4]
+num1 = [0, 4]
+num2 = [2, 6]
+num3 = [1, 5]
+num4 = [7, 9]
+num5 = [3, 8]
+
+print('Primeiro dígito (0 ou 4) :1')
+print('Primeiro dígito (2 ou 6) :2')
+print('Primeiro dígito (1 ou 5) :3')
+print('Primeiro dígito (7 ou 9) :4')
+print('Primeiro dígito (3 ou 8) :5')
+c = int(input('Informe seu primeiro dígito: '))
+if c == 1:
+    e1 = num1
+elif c == 2:
+    e1 = num2
+elif c == 3:
+    e1 = num3
+elif c == 4:
+    e1 = num4
+elif c == 5:
+    e1 = num5
+if senhacrt[0] in e1:
+    cr: int = True
+else:
+    cr: int = False
+print('Segundo dígito (0 ou 4) :1 ')
+print('Segundo dígito (2 ou 6) :2 ')
+print('Segundo dígito (1 ou 5) :3 ')
+print('Segundo dígito (7 ou 9) :4 ')
+print('Segundo dígito (3 ou 8) :5 ')
+c2 = int(input('Informe seu segundo dígito: '))
+if c2 == 1:
+    e2 = num1
+elif c2 == 2:
+    e2 = num2
+elif c2 == 3:
+    e2 = num3
+elif c2 == 4:
+    e2 = num4
+elif c2 == 5:
+    e2 = num5
+if senhacrt[1] in e2:
+    cr2: int = True
+else:
+    cr2: int = False
+print('Terceiro dígito (0 ou 4) :1 ')
+print('Terceiro dígito (2 ou 6) :2 ')
+print('Terceiro dígito (1 ou 5) :3 ')
+print('Terceiro dígito (7 ou 9) :4 ')
+print('Terceiro dígito (3 ou 8) :5 ')
+c3 = int(input('Informe seu terceiro dígito: '))
+if c3 == 1:
+    a3 = num1
+elif c3 == 2:
+    a3 = num2
+elif c3 == 3:
+    a3 = num3
+elif c3 == 4:
+    a3 = num4
+elif c3 == 5:
+    a3 = num5
+if senhacrt[2] in a3:
+    cr3: int = True
+else:
+    cr3: int = False
+
+print('Quarto dígito (0 ou 4) :1 ')
+print('Quarto dígito (2 ou 6) :2 ')
+print('Quarto dígito (1 ou 5) :3 ')
+print('Quarto dígito (7 ou 9) :4 ')
+print('Quarto dígito (3 ou 8) :5 ')
+c4 = int(input('Informe seu quarto dígito: '))
+if c4 == 1:
+    z4 = num1
+elif c4 == 2:
+    z4 = num2
+elif c4 == 3:
+    z4 = num3
+elif c4 == 4:
+    z4 = num4
+elif c4 == 5:
+    z4 = num5
+if senhacrt[3] in z4:
+    cr4: int = True
+else:
+    cr4: int = False
+if cr and cr2 and cr3 and cr4 == True:
+    print('SENHA CORRETA')
+else:
+    print('SENHA INCORRETA')
